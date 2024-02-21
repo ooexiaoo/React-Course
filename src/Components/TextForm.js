@@ -14,6 +14,12 @@ export default function TextForm(props) {
     setText(newText)
   };
 
+  const handleChnClick = ()=>{
+    let newTextArry = text.split(",");
+    let newText = newTextArry.join(". ");
+    setText(newText);
+  }
+
   const handleOnChange = (event)=>{
    /*  console.log("On Change"); */
     setText(event.target.value)
@@ -38,6 +44,10 @@ export default function TextForm(props) {
 
       <button className="btn btn-primary my-2 mx-2" onClick={handleLoClick}>
         Convert to Uppercase
+      </button>
+
+      <button className="btn btn-primary my-2 mx-2" onClick={handleChnClick}>
+        Full Stop
       </button>
     </div>
     <div className="container my-2">
