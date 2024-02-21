@@ -57,6 +57,9 @@ export default function TextForm(props) {
       <h2>Preview</h2>
       <p>{text}</p>
     </div>
+    <div className="container my-2">
+     {/*  {about} */}
+    </div>
     </>
   );
 }
