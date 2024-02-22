@@ -4,7 +4,7 @@ export default function About() {
 
     const[myStyle, setMyStyle] =useState({
         color: 'white',
-        backgroundColor: '#2A0944',
+        backgroundColor: '#212529',
         border: '1px solid white'
     })
 
@@ -21,7 +21,7 @@ export default function About() {
         } else {
             setMyStyle({
                 color: 'white',
-                backgroundColor: '#2A0944',
+                backgroundColor: '#212529',
                 border: '1px solid black'
             })
             setBtnText("Enable Light Mode")
