@@ -5,6 +5,7 @@ export default function TextForm(props) {
     /* console.log("Uppercase was clicked" + text); */
     let newText = text.toUpperCase();
     setText(newText)
+    props.showAlert("converted to Uppercase!", "success");
   };
 
 
@@ -12,12 +13,14 @@ export default function TextForm(props) {
    /* console.log("Uppercase was clicked" + text); */
     let newText = text.toLowerCase();
     setText(newText)
+    props.showAlert("converted to Lowercase!", "success");
   };
 
   const handleChnClick = ()=>{
     let newTextArry = text.split(",");
     let newText = newTextArry.join(". ");
     setText(newText);
+    props.showAlert("added Fullstop!", "success");
   }
 
   const handleOnChange = (event)=>{
