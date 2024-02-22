@@ -1,7 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
 import PropTypes from 'prop-types'
 
 export default function Navbar(props) {
+
   return (
     <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
     <div className="container-fluid">
@@ -29,7 +30,7 @@ export default function Navbar(props) {
             </ul>
           </li>
         </ul>
-{/*         <form className="d-flex" role="search">
+          {/* <form className="d-flex" role="search">
           <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
           <button className="btn btn-outline-dark" type="submit">Search</button>
         </form> */}
@@ -37,6 +38,8 @@ export default function Navbar(props) {
           <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
           <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Enable Dark Mode</label>
         </div>
+        <div className="btn-group" role="group" aria-label="Basic mixed styles example">
+      </div>
       </div>
     </div>
   </nav>
