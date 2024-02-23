@@ -53,7 +53,7 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar title="Choti💩" mode={mode} toggleMode={toggleMode}/>
+        <Navbar title="Choti T💩tti" mode={mode} toggleMode={toggleMode}/>
         <Alert alert={alert}/>
         <div className="container my-3">
           <Routes>
