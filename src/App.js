@@ -19,7 +19,17 @@ function App() {
     }, 1500);
   }
 
-  const toggleMode = ()=>{
+  const removeBodyClasses = ()=>{
+    document.body.classList.remove('bg-light')
+    document.body.classList.remove('bg-dark')
+    document.body.classList.remove('bg-success')
+    document.body.classList.remove('bg-warning')
+    document.body.classList.remove('bg-danger')
+  }
+
+  const toggleMode = (cls)=>{
+    removeBodyClasses();
+    document.body.classList.add('bg-' +cls)
     if (mode === 'light'){
       setMode('dark');
       document.body.style.backgroundColor = '#212529';
@@ -33,7 +43,7 @@ function App() {
   }
   return (
     <>
-      <Navbar title="💩" mode={mode} toggleMode={toggleMode}/>
+      <Navbar title="Choti💩" mode={mode} toggleMode={toggleMode}/>
       <Alert alert={alert}/>
       <div className="container my-3">
         <TextForm showAlert={showAlert} heading="Text to analyze" mode={mode}/>

@@ -43,7 +43,7 @@ export default function TextForm(props) {
         id="myBox"
         rows="8"
       ></textarea>
-      <button className="btn btn-primary my-2" onClick={handleUpClick}>
+      <button className="btn btn-${props.toggleMode} my-2" onClick={handleUpClick}>
         Convert to Uppercase
       </button>
 
