@@ -48,7 +48,7 @@ export default function TextForm(props) {
       </button>
 
       <button className="btn btn-primary my-2 mx-2" onClick={handleLoClick}>
-        Convert to Uppercase
+        Convert to Lowercase
       </button>
 
       <button className="btn btn-primary my-2 mx-2" onClick={handleChnClick}>
